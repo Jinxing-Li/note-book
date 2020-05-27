@@ -35,7 +35,12 @@ const yargs = require('yargs')
 
 const notes = require('./nodemod');
 
-const argv = yargs.argv;
+const argv = yargs
+     .command('add', 'Add a new note', {
+
+     })
+     .help()
+     .argv;
 var command = argv._[0];
 
 console.log('Command: ', command);
