@@ -10,7 +10,7 @@ var logNote = (note) => {
 };
 
 var getAll = () => {
-     return fetchNotes
+     return fetchNotes()
 };
 
 var getNote = (title) => {
